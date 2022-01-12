@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ced6e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverController">
+   <children>
+      <JFXTextField fx:id="txtDriverName" focusColor="#000207" layoutX="249.0" layoutY="72.0" onAction="#moveToNic" prefHeight="31.0" prefWidth="521.0" />
+      <JFXTextField fx:id="txtNic" focusColor="#01030a" layoutX="249.0" layoutY="153.0" onAction="#moveToDrivingLicence" prefHeight="31.0" prefWidth="521.0" />
+      <JFXTextField fx:id="txtDrivingLicence" focusColor="#010617" layoutX="249.0" layoutY="234.0" onAction="#moveToAddress" prefHeight="31.0" prefWidth="521.0" />
+      <JFXTextField fx:id="txtAddress" focusColor="#020e30" layoutX="249.0" layoutY="320.0" onAction="#moveToContact" prefHeight="31.0" prefWidth="521.0" />
+      <JFXTextField fx:id="txtContact" focusColor="#010717" layoutX="249.0" layoutY="396.0" prefHeight="31.0" prefWidth="521.0" />
+      <Label layoutX="60.0" layoutY="90.0" text="Driver Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="168.0" text="NIC">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="249.0" text="Driving Licence No:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="329.0" text="Address">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="405.0" text="Contact">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="638.0" layoutY="478.0" onAction="#addDriverOnAction" prefHeight="54.0" prefWidth="224.0" style="-fx-background-color: #a4b0be;" text="Add Driver">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
